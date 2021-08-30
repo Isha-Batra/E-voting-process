@@ -1,0 +1,35 @@
+.table {
+    margin-left: 10%;
+    
+
+}
+.table tr {
+    text-align: center;
+    
+    
+}
+table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+    width: 80%;
+}
+td {
+    padding: 10px 0;
+}
+table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+body {
+    font-family: 'Baloo Bhai', cursive;
+   background-color:  rgb(219, 219, 241);
+}
+.top {
+    padding-left: 550px;
+}
+.btn {
+    border-radius: 6px;
+    background-color:cornflowerblue
+    
+    
+}

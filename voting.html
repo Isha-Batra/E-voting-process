@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+.EVM{
+    display: inline-flex;
+    /*border: solid bisque;*/
+    padding-left: 15px;
+    padding-right: 80px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 13px 25px 10px rgb(27, 162, 240);
+    margin-top: 140px;
+    margin-left: 350px;
+    background-color: rgb(150, 225, 248);
+    font-family: 'Baloo Bhai', cursive;
+    /* position: absolute;
+    top: 500px; */
+}
+.partyA{
+    display: inline-block;
+    border: solid rgb(48, 154, 241);
+   border-right: none;
+    padding-left: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+   word-spacing: 10px;
+   font-size: 30px;
+   border-top-left-radius: 10px;
+
+}
+.partyB{
+    display: inline-block;
+    
+    border: solid rgb(48, 154, 241);
+    border-right: none;
+    padding-left: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    word-spacing: 10px;
+   font-size: 30px;
+   
+}
+.partyC{
+    display: inline-block;
+    
+    border: solid rgb(48, 154, 241);
+    border-right: none;
+    word-spacing: 10px;
+   font-size: 30px;
+   padding-left: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+.partyD{
+    display: inline-block;
+    
+    border: solid rgb(48, 154, 241);
+    border-right: none;
+    padding-left: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    word-spacing: 10px;
+   font-size: 30px;
+   
+}
+.partyE{
+    display: inline-block;
+    
+    border: solid rgb(48, 154, 241);
+    border-right: none;
+    
+    padding-left: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    word-spacing: 10px;
+   font-size: 30px;
+   
+}
+.partyF{
+    display: inline-block;
+    
+    border: solid rgb(48, 154, 241);
+    border-right: none;
+    padding-left: 2px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    word-spacing: 10px;
+   font-size: 30px;
+   border-bottom-left-radius: 10px;
+}
+.grid{
+    display:grid;
+   grid-template-columns:440px 120px 20px 20px 100px ;
+   
+}
+    
+
+.symbol{
+    display: inline-block;
+    /*box-shadow: 10px 10px 20px  black;*/
+    border: solid rgb(48, 154, 241);
+    border-left: none;
+    padding-left: 2px;
+    /*padding-top: 30px;
+    padding-bottom: 30px;*/
+    padding-right: 30px;
+    padding-top: 5px;
+    
+}
+/*.btn{
+    
+    display: inline-block;
+    
+    border: solid black;
+    
+    margin-left: 20px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    word-spacing: 10px;
+   font-size: 30px;
+}*/
+
+.btn {
+    padding-top: 20px;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #303331;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.btn:hover {background-color: #3e8e41;
+
+    
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 20px solid #555;
+	border-bottom: 20px solid transparent;
+    margin-top: 40px;
+  margin-left: 3px;
+    
+}
+.rectangle {
+    margin-top: 50px;
+  height: 20px;
+  width: 30px;
+  background-color: #555;
+  }
+  #A{
+      border-top-right-radius: 10px;
+  }
+#F{
+    border-bottom-right-radius: 10px;
+}
+.navbar {
+        position: fixed;
+        top: 0px;
+        right: -1px;
+        left: -1px;
+        z-index: 9;
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center " style=" background-color:#cdd4d4">
+        <h1>National E-voting Portal</h1>
+        <p>राष्ट्रीय मतदान सेवा पोर्टल</p>
+        <img src="ashoka logo.jpg" alt="" width="60px" height="100px">
+    </div>
+    <div class="navbar">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">E-Voting</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="front.html">Home</a></li>
+                    <li data-toggle="tooltip" title="click here to check eligiblity rules"><a href="#">Eligiblity</a>
+                    </li>
+                    <li data-toggle="tooltip" title="Click here to know more about us"><a href="#">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        <div class="EVM">
+            <div class="grid">
+                
+    
+                <div class="partyA">
+                 1.   Candidate'sName  PartyA
+                 
+                </div>
+                <div  id="A" class="symbol">
+                    <img src="partyA3.jpg" width="100px" height="100px">
+                   
+                  </div>
+                  <div class="triangle-left"></div>
+                  <div class="rectangle"></div>
+                  <div class="vote">
+    
+                      <button class="btn" onclick="window.location.href='/submit.html'">VOTE</button>
+                  </div>
+                
+                <div class="partyB">
+        
+                   2.   Candidate'sName PartyB<br>
+                </div>
+                <div class="symbol">
+               
+                    <img src="partyB.png" width="100px" height="100px"><br>
+              </div> 
+              <div class="triangle-left"></div>
+              <div class="rectangle"></div>
+              <div class="vote">
+                <button class="btn" onclick="window.location.href='/submit.html'">VOTE</button>
+                </div>   
+    
+                <div class="partyC">
+                    
+                   3.   Candidate'sName PartyC<br>
+                </div>
+                <div class="symbol">
+                           
+                    <img src="partyC.png" width="100px" height="100px"><br>
+                </div>
+                <div class="triangle-left"></div>
+                <div class="rectangle"></div>
+                <div class="vote">
+                    <button class="btn" onclick="window.location.href='/submit.html'">VOTE</button>
+                </div>
+                <div class="partyD">
+        
+                    4.   Candidate'sName PartyD <br>
+                </div>
+                <div class="symbol">
+                    
+                    <img src="partyD.png" width="100px" height="100px"> <br>
+                </div>
+                <div class="triangle-left"></div>
+                <div class="rectangle"></div>
+                <div class="vote">
+                    
+                    <button class="btn" onclick="window.location.href='/submit.html'">VOTE</button>
+                </div>
+            
+                <div class="partyE">
+        
+                   5.   Candidate'sName PartyE<br>
+                </div>
+                <div class="symbol">
+         
+                     <img src="partyE.png" width="100px" height="100px"><br>
+                 </div>
+                 <div class="triangle-left"></div>
+                 <div class="rectangle"></div>
+                 <div class="vote">
+                    <button class="btn" onclick="window.location.href='/submit.html'">VOTE</button>
+                </div>
+                <div class="partyF">
+        
+                   6.   Candidate'sName PartyF<br>
+                </div>
+                <div id="F" class="symbol">
+        
+                    <img src="partyF2.jpg" width="100px" height="100px" ><br>
+                </div>
+                <div class="triangle-left"></div>
+                <div class="rectangle"></div>
+                <div class="vote">
+                    <audio id="sound1" src="beep.wav" preload="auto"></audio>
+                    <button  class="btn" onmouseover="document.getElementById('sound1').play();" onclick="window.location.href='/submit.html'">VOTE</button>
+                </div>
+     
+                
+            </div>
+        </div>
+        
+    
+</body>
+</html>
